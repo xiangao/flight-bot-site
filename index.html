@@ -62,11 +62,14 @@ td { padding: 5px 8px; border-bottom: 1px solid #f1f5f9; color: #475569; }
 td.price-cell { font-weight: 600; color: #111; }
 td.low        { color: #16a34a; font-weight: 700; }
 td.empty      { color: #cbd5e1; }
+td.dates-cell { white-space: nowrap; }
+table a       { color: #2563eb; text-decoration: none; font-weight: 600; }
+table a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 <h1>Flight Prices</h1>
-<p class="meta">Updated 2026-05-29 08:22</p>
+<p class="meta">Updated 2026-05-29 08:55</p>
 <div class="card">
   <div class="card-header">
     <div class="route-name">Asia Grand Tour</div>
@@ -82,20 +85,23 @@ td.empty      { color: #cbd5e1; }
       
     </div>
     <h3>Price History</h3>
-    <table><tr><th>Date</th><th>Nonstop</th><th>1 Stop</th></tr>
-<tr><td>May 24</td><td class="price-cell low">$4,017</td><td class="price-cell">$1,459</td></tr>
-<tr><td>May 14</td><td class="empty">—</td><td class="price-cell">$1,409</td></tr>
-<tr><td>May 13</td><td class="empty">—</td><td class="price-cell">$1,425</td></tr>
-<tr><td>May 12</td><td class="empty">—</td><td class="price-cell">$1,460</td></tr>
-<tr><td>May 11</td><td class="empty">—</td><td class="price-cell">$1,410</td></tr>
-<tr><td>May 10</td><td class="empty">—</td><td class="price-cell">$1,410</td></tr>
-<tr><td>May 09</td><td class="empty">—</td><td class="price-cell">$1,410</td></tr>
-<tr><td>May 08</td><td class="empty">—</td><td class="price-cell">$1,460</td></tr>
-<tr><td>May 07</td><td class="empty">—</td><td class="price-cell">$1,409</td></tr>
-<tr><td>May 06</td><td class="empty">—</td><td class="price-cell">$1,410</td></tr>
-<tr><td>May 05</td><td class="empty">—</td><td class="price-cell">$1,338</td></tr>
-<tr><td>May 04</td><td class="price-cell">$9,881</td><td class="price-cell low">$1,337</td></tr>
-<tr><td>May 03</td><td class="price-cell">$9,881</td><td class="price-cell low">$1,337</td></tr>
+    <table><tr><th>Date</th><th>Stops</th><th>Price</th><th>Airline</th><th>Travel dates</th><th></th></tr>
+<tr><td>May 24</td><td>nonstop</td><td class="price-cell low">$4,017</td><td>JAL + Hong Kong Express + Cathay Pacific</td><td class="dates-cell">Oct 21 → Nov 18</td><td></td></tr>
+<tr><td>May 24</td><td>1 stop</td><td class="price-cell">$1,459</td><td>WestJet + Hong Kong Express + Qatar Airways</td><td class="dates-cell">Oct 21 → Nov 11</td><td></td></tr>
+<tr><td>May 14</td><td>1 stop</td><td class="price-cell">$1,409</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 22</td><td></td></tr>
+<tr><td>May 13</td><td>1 stop</td><td class="price-cell">$1,425</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 29</td><td></td></tr>
+<tr><td>May 12</td><td>1 stop</td><td class="price-cell">$1,460</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 26</td><td></td></tr>
+<tr><td>May 11</td><td>1 stop</td><td class="price-cell">$1,410</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 29</td><td></td></tr>
+<tr><td>May 10</td><td>1 stop</td><td class="price-cell">$1,410</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 22</td><td></td></tr>
+<tr><td>May 09</td><td>1 stop</td><td class="price-cell">$1,410</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 22</td><td></td></tr>
+<tr><td>May 08</td><td>1 stop</td><td class="price-cell">$1,460</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 26</td><td></td></tr>
+<tr><td>May 07</td><td>1 stop</td><td class="price-cell">$1,409</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 22</td><td></td></tr>
+<tr><td>May 06</td><td>1 stop</td><td class="price-cell">$1,410</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 29</td><td></td></tr>
+<tr><td>May 05</td><td>1 stop</td><td class="price-cell">$1,338</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 29</td><td></td></tr>
+<tr><td>May 04</td><td>1 stop</td><td class="price-cell low">$1,337</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 22</td><td></td></tr>
+<tr><td>May 04</td><td>nonstop</td><td class="price-cell">$9,881</td><td>JAL</td><td class="dates-cell">Sep 01 → Sep 22</td><td></td></tr>
+<tr><td>May 03</td><td>nonstop</td><td class="price-cell">$9,881</td><td>JAL</td><td class="dates-cell">Sep 01 → Sep 22</td><td></td></tr>
+<tr><td>May 03</td><td>1 stop</td><td class="price-cell low">$1,337</td><td>Cathay Pacific</td><td class="dates-cell">Sep 01 → Sep 22</td><td></td></tr>
 </table>
   </div>
 </div>
@@ -115,15 +121,17 @@ td.empty      { color: #cbd5e1; }
       
     </div>
     <h3>Price History</h3>
-    <table><tr><th>Date</th><th>Nonstop</th><th>1 Stop</th></tr>
-<tr><td>May 29</td><td class="price-cell low">$1,622</td><td class="price-cell low">$631</td></tr>
-<tr><td>May 24</td><td class="price-cell low">$1,622</td><td class="price-cell">$855</td></tr>
-<tr><td>May 23</td><td class="empty">—</td><td class="price-cell">$942</td></tr>
-<tr><td>May 20</td><td class="empty">—</td><td class="price-cell">$942</td></tr>
-<tr><td>May 19</td><td class="empty">—</td><td class="price-cell">$942</td></tr>
-<tr><td>May 17</td><td class="empty">—</td><td class="price-cell">$975</td></tr>
-<tr><td>May 16</td><td class="empty">—</td><td class="price-cell">$975</td></tr>
-<tr><td>May 15</td><td class="empty">—</td><td class="price-cell">$975</td></tr>
+    <table><tr><th>Date</th><th>Stops</th><th>Price</th><th>Airline</th><th>Travel dates</th><th></th></tr>
+<tr><td>May 29</td><td>nonstop</td><td class="price-cell low">$1,622</td><td>Cathay Pacific to Hong Kong</td><td class="dates-cell">Oct 01 → Oct 22</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+HKG+on+2026-10-01+returning+2026-10-22" target="_blank" rel="noopener">Search ↗</a></td></tr>
+<tr><td>May 29</td><td>1 stop</td><td class="price-cell low">$631</td><td>Delta to Shanghai</td><td class="dates-cell">Oct 21 → Nov 14</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+PVG+on+2026-10-21+returning+2026-11-14" target="_blank" rel="noopener">Search ↗</a></td></tr>
+<tr><td>May 24</td><td>1 stop</td><td class="price-cell">$855</td><td>United to Beijing</td><td class="dates-cell">Oct 21 → Nov 14</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+PEK+on+2026-10-21+returning+2026-11-14" target="_blank" rel="noopener">Search ↗</a></td></tr>
+<tr><td>May 24</td><td>nonstop</td><td class="price-cell low">$1,622</td><td>Cathay Pacific to Hong Kong</td><td class="dates-cell">Oct 01 → Oct 22</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+HKG+on+2026-10-01+returning+2026-10-22" target="_blank" rel="noopener">Search ↗</a></td></tr>
+<tr><td>May 23</td><td>1 stop</td><td class="price-cell">$942</td><td>Cathay Pacific to Beijing</td><td class="dates-cell">Sep 01 → Sep 22</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+PEK+on+2026-09-01+returning+2026-09-22" target="_blank" rel="noopener">Search ↗</a></td></tr>
+<tr><td>May 20</td><td>1 stop</td><td class="price-cell">$942</td><td>Cathay Pacific to Beijing</td><td class="dates-cell">Sep 01 → Sep 22</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+PEK+on+2026-09-01+returning+2026-09-22" target="_blank" rel="noopener">Search ↗</a></td></tr>
+<tr><td>May 19</td><td>1 stop</td><td class="price-cell">$942</td><td>Cathay Pacific to Beijing</td><td class="dates-cell">Sep 01 → Sep 22</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+PEK+on+2026-09-01+returning+2026-09-22" target="_blank" rel="noopener">Search ↗</a></td></tr>
+<tr><td>May 17</td><td>1 stop</td><td class="price-cell">$975</td><td>United to Shanghai</td><td class="dates-cell">Sep 01 → Sep 22</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+PVG+on+2026-09-01+returning+2026-09-22" target="_blank" rel="noopener">Search ↗</a></td></tr>
+<tr><td>May 16</td><td>1 stop</td><td class="price-cell">$975</td><td>United to Shanghai</td><td class="dates-cell">Sep 01 → Sep 22</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+PVG+on+2026-09-01+returning+2026-09-22" target="_blank" rel="noopener">Search ↗</a></td></tr>
+<tr><td>May 15</td><td>1 stop</td><td class="price-cell">$975</td><td>United to Shanghai</td><td class="dates-cell">Sep 01 → Sep 22</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+PVG+on+2026-09-01+returning+2026-09-22" target="_blank" rel="noopener">Search ↗</a></td></tr>
 </table>
   </div>
 </div>
