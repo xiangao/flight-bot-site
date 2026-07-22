@@ -67,23 +67,24 @@ td.leg-cell   { white-space: nowrap; color: #475569; }
 .hist-wrap    { overflow-x: auto; }
 table a       { color: #2563eb; text-decoration: none; font-weight: 600; }
 table a:hover { text-decoration: underline; }
+.disclaimer   { font-size: 0.8rem; line-height: 1.5; color: #64748b;
+                max-width: 760px; margin: 8px auto 0; padding-top: 12px; }
 </style>
 </head>
 <body>
 <h1>Flight Prices</h1>
-<p class="meta">Updated 2026-07-20 10:24</p>
+<p class="meta">Updated 2026-07-22 16:03</p>
 <div class="card">
   <div class="card-header">
     <div class="route-name">Asia Grand Tour</div>
   </div>
   <div class="card-body">
     <div class="panels">
-      <div class="panel alert">
+      <div class="panel stale">
   <div class="panel-stop">Nonstop</div>
-  <div class="price-row"><span class="price">$1,628</span><span class="badge badge-alert">★ Great price</span></div>
+  <div class="price-row"><span class="price">$1,628</span><span class="badge badge-stale">Last seen Jul 20</span></div>
   <div class="dates">2026-09-01 → 2026-09-29</div>
-  <div class="leg"><div class="seg"><div class="seg-airports">JAL</div></div></div>
-  
+  <div class="dates" style="color:#94a3b8">JAL</div>
 </div>
       
     </div>
@@ -134,19 +135,17 @@ table a:hover { text-decoration: underline; }
   </div>
   <div class="card-body">
     <div class="panels">
-      <div class="panel alert">
+      <div class="panel stale">
   <div class="panel-stop">Nonstop</div>
-  <div class="price-row"><span class="price">$1,106</span><span class="badge badge-alert">★ Great price</span></div>
+  <div class="price-row"><span class="price">$1,106</span><span class="badge badge-stale">Last seen Jul 20</span></div>
   <div class="dates">2026-10-21 → 2026-11-11</div>
-  <div class="leg"><div class="leg-header">Outbound  ·  16h 35m</div><div class="seg"><div class="seg-airports">BOS → PEK</div><div class="seg-times">2026-10-21 23:55  →  2026-10-23 04:30</div><div class="seg-meta">HU 730  ·  Boeing 787  ·  16h 35m</div></div></div>
-  <div class="leg"><div class="leg-header">Inbound  ·  15h</div><div class="seg"><div class="seg-airports">PEK → BOS</div><div class="seg-times">2026-11-11 19:00  →  2026-11-11 21:00</div><div class="seg-meta">HU 729  ·  Boeing 787  ·  15h</div></div></div>
+  <div class="dates" style="color:#94a3b8">Hainan to Beijing</div>
 </div>
-      <div class="panel alert">
+      <div class="panel stale">
   <div class="panel-stop">1 Stop</div>
-  <div class="price-row"><span class="price">$916</span><span class="badge badge-alert">★ Great price</span></div>
+  <div class="price-row"><span class="price">$916</span><span class="badge badge-stale">Last seen Jul 20</span></div>
   <div class="dates">2026-10-21 → 2026-11-14</div>
-  <div class="leg"><div class="leg-header">Outbound  ·  21h 55m</div><div class="seg"><div class="seg-airports">BOS → PEK</div><div class="seg-times">2026-10-21 23:55  →  2026-10-23 04:30</div><div class="seg-meta">HU 730  ·  Boeing 787  ·  16h 35m</div></div><div class="layover">⏱ Layover in PEK: 3h</div><div class="seg"><div class="seg-airports">PEK → PVG</div><div class="seg-times">2026-10-23 07:30  →  2026-10-23 09:50</div><div class="seg-meta">HU 7613  ·  Boeing 737  ·  2h 20m</div></div></div>
-  <div class="leg"><div class="leg-header">Inbound  ·  18h 46m</div><div class="seg"><div class="seg-airports">PVG → DTW</div><div class="seg-times">2026-11-14 10:00  →  2026-11-14 10:30</div><div class="seg-meta">DL 388  ·  Airbus A350  ·  13h 30m</div></div><div class="layover">⏱ Layover in DTW: 3h 20m</div><div class="seg"><div class="seg-airports">DTW → BOS</div><div class="seg-times">2026-11-14 13:50  →  2026-11-14 15:46</div><div class="seg-meta">DL 1171  ·  Airbus A321  ·  1h 56m</div></div></div>
+  <div class="dates" style="color:#94a3b8">Hainan to Shanghai</div>
 </div>
     </div>
     <h3>Nonstop — Price History</h3>
@@ -184,26 +183,10 @@ table a:hover { text-decoration: underline; }
 </table></div>
   </div>
 </div>
-<div class="card">
-  <div class="card-header">
-    <div class="route-name">Hainan Direct BOS-PEK</div>
-  </div>
-  <div class="card-body">
-    <div class="panels">
-      <div class="panel alert">
-  <div class="panel-stop">Nonstop</div>
-  <div class="price-row"><span class="price">$944</span><span class="badge badge-alert">★ Great price</span></div>
-  <div class="dates">2026-09-30 → 2026-10-21</div>
-  <div class="leg"><div class="seg"><div class="seg-airports">Hainan to Beijing</div></div></div>
-  
-</div>
-      
-    </div>
-    <h3>Nonstop — Price History</h3>
-<div class="hist-wrap"><table><tr><th>Date</th><th>Price</th><th>Airline</th><th>Travel dates</th><th>Outbound</th><th>Inbound</th><th>Total</th><th></th></tr>
-<tr><td>Jul 20</td><td class="price-cell low">$944</td><td>Hainan to Beijing</td><td class="dates-cell">Sep 30 → Oct 21</td><td class="leg-cell">nonstop · 16h 35m</td><td class="leg-cell">nonstop · 15h 20m</td><td class="dates-cell">31h 55m</td><td><a href="https://www.google.com/travel/flights?q=Flights+from+BOS+to+PEK+on+2026-09-30+returning+2026-10-21" target="_blank" rel="noopener">Search ↗</a></td></tr>
-</table></div>
-  </div>
-</div>
+<p class="disclaimer">Tracked prices come from the fare API for each route (Ignav or Google
+Flights via SerpAPI). The <b>Search&nbsp;↗</b> link opens an <i>independent</i> Google Flights
+search for the same route and dates — it is a different seller, so its price can differ (in
+either direction) from the tracked fare above. Treat it as a live sanity-check, not the exact
+fare, and confirm the price on the airline's own site before booking.</p>
 </body>
 </html>
